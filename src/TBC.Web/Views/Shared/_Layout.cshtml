@@ -26,27 +26,29 @@
                     <li class="mr-3 nav-btn nav-item">Yordam</li>
                 </ul>
             </nav>
+            <button class="nav-button mr-3 d-flex" style="width:61px;">
+                Uz
+                <img src="~/down-lang.svg" style="margin-left:5px;width:13px;height:13px;" />
+            </button>
+
+            <button class="nav-button mr-3">
+                <img src="~/volume-off.svg" style="width:17px;height:17px;" />
+            </button>
+            
+            <button class="nav-button mr-3">
+                <img src="~/eye.svg" style="width:17px;height:17px;" />
+            </button>
+            
+            <button class="search-button mr-3">
+                <img src="~/search.svg" style="width:17px;height:17px;"/>
+            </button>
+            <button class="download-btn mr-3">
+                Ilovani yuklab olish
+            </button>
         </div>
     </header>
     <div class="container" style="margin-top:64px;">
         <main role="main" class="">
-            <div class="application-download row">
-                <div class="col-sm-12 col-md-12 col-lg-5 description">
-                    <p class="intro-text-1 paragraph-1 paragraph-1-zoom-0">
-                        TBC — Oʻzbekistondagi raqamli birinchi bank
-                    </p> <h1 class="headline-1 headline-1-zoom-0">
-                        Hayotingizni osonlashtiramiz
-                    </h1> <p class="intro-text-2 paragraph-2 paragraph-2-zoom-0">
-                        Ilovani yuklab oling — bank doim yoningizda boʻlsin.
-                    </p> <p class="intro-text-3 paragraph-3 paragraph-3-zoom-0">
-                        Raqamingizni kiriting — ilovani yuklab olishingiz uchun sizga havola joʻnatiladi
-                    </p> <div class="sms-input-wrapper"><div class="sms-input sms-input-commponent-18 sms-input-ligth mb-0"><input type="text" name="" id="" placeholder="+998 XX XXX - XX - XX"> <button id="send-sms-button-18" class="btn v-button btn-text-1 sms-sned-button btn-text-1-zoom-0" disabled="disabled"><span> Havolani olish</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon sprite-icons"><use href="/_nuxt/493bbae73842ed6df45233953b3eb9ae.svg#i-arrow" xlink:href="/_nuxt/493bbae73842ed6df45233953b3eb9ae.svg#i-arrow"></use></svg> <!----> <!----></button></div> <div class="sms-input mt-0 p-0 pt-3"><div class="checkbox-wrapper sms-input-checkbox  mt-0  float-left"><label class="paragraph-3 paragraph-3-zoom-0"><div class="icon-container"><!----></div> <input type="checkbox" name="agreement"> <span>Bilan roziman	&nbsp; <a href="https://tbcbank.uz/uploads/Murojaatlarni_ko_rib_chiqish_6165b7d7ee.pdf" target="_blank" class="paragraph-3 sms-input-checkbox-terms cursor-pointer paragraph-3-zoom-0">Xizmat ko'rsatish shartlari</a></span></label></div></div></div> <div data-v-0d24514c="" class="application-buttons-container">
-                        <div data-v-0d24514c="" class="store-icons-title caption-title caption-title-zoom-0">
-                            Ilovamizni yuklab oling
-                        </div> <div data-v-0d24514c="" class="store-icons"><!----><!----> <div data-v-0d24514c=""></div> <div data-v-0d24514c="" data-tippy-component="" class="store-qr-wrapper"><div data-tippy-component-trigger="" tabindex="0"><div data-v-0d24514c="" class="store-qr"><div data-v-0d24514c="" class="store-qr-icon"><svg data-v-0d24514c="" xmlns="http://www.w3.org/2000/svg" class="icon sprite-icons"><use data-v-0d24514c="" href="/_nuxt/493bbae73842ed6df45233953b3eb9ae.svg#i-qr" xlink:href="/_nuxt/493bbae73842ed6df45233953b3eb9ae.svg#i-qr"></use></svg></div> <span data-v-0d24514c="" class="subtitle subtitle-zoom-0">QR kodni skaner qiling</span></div></div> </div></div>
-                    </div>
-                </div> <div class="col-sm-12 col-md-12 col-lg-7"><img src="https://tbcbank.uz/uploads/App_2_17bd8c0e45.jpeg" alt="1" class="application-download-main-img"></div>
-            </div>
             @RenderBody()
         </main>
     </div>
@@ -83,9 +85,10 @@
     nav ul {
         text-align: center;
     }
+
     .application-download {
-    align-items: center;
-    display: flex;
+        align-items: center;
+        display: flex;
     }
 
     .application-download-main-img {
@@ -111,4 +114,46 @@
         letter-spacing: 0;
         line-height: 1.2;
     }
+
+    .download-btn{
+        background-color: #00a2b7;
+        width: 180px;
+        height: 48px;
+        border-radius: 16px;
+        border: none;
+        color:white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .download-btn:hover{
+        background-color: #076370;
+    }
+
+    .search-button {
+        align-items:center;
+        background-color: #f9f8f6;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 16px;
+        height: 48px;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        width: 48px;
+        z-index: 2;
+    }
+
+    .nav-button {
+        align-items: center;
+        background-color: #f9f8f6;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 16px;
+        height: 48px;
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        width: 48px;
+        z-index: 2;
+    }
+
 </style>
