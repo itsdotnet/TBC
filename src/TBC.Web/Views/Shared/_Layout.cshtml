@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TBC.Web.styles.css" asp-append-version="true" />
 </head>
-<body style="background-color:ghostwhite">
+<body style="background-color:ghostwhite;">
     <header class="" style="height:80px; width:1349px; background-color:white;">
         <div class="container d-flex align-items-center" style="padding-top:16px;">
             <a class="logo nuxt-link-exact-active nuxt-link-active" asp-area="" asp-controller="Home" asp-action="Index">
@@ -47,11 +47,12 @@
             </button>
         </div>
     </header>
-    <div class="container" style="margin-top:64px;">
+    <div class="container" style="margin-top:64px;padding-left:0px; margin-left:0px;">
         <main role="main" class="">
             @RenderBody()
         </main>
     </div>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -84,21 +85,6 @@
 
     nav ul {
         text-align: center;
-    }
-
-    .application-download {
-        align-items: center;
-        display: flex;
-    }
-
-    .application-download-main-img {
-        border-radius: 24px;
-        height: 700px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        -o-object-position: top;
-        object-position: top;
-        width: 100%;
     }
 
     .sms-input {
